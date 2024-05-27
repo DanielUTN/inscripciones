@@ -1,0 +1,244 @@
+{% extends 'auth/pages-blank.html' %}
+
+<!-- ======= Extiende de layoutNav para la pagina inicial ======= -->
+
+{% block content %}
+
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Preguntas frecuentes</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'home' %}" class="text-bg-success">Home</a>
+        </li>
+        <!--li class="breadcrumb-item">Pages</li>
+          <li class="breadcrumb-item active">Frequently Asked Questions</li-->
+      </ol>
+    </nav>
+  </div>
+  <!-- End Page Title -->
+
+  <section class="section faq">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card basic">
+          <div class="card-body">
+            <h5 class="card-title">Programa «Codo a Codo 4.0»</h5>
+
+            <div>
+              <h6>1. ¿Qué es Codo a Codo 4.0?</h6>
+              <p>
+                Codo a Codo 4.0 es un Programa de enseñanza en Programación,
+                destinado a personas jóvenes y adultas, que cuenten con título
+                secundario. Tiene como objetivo brindar herramientas que
+                faciliten la inserción laboral en el sector IT, necesarias para
+                mejorar la empleabilidad de las personas.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <h6>2. ¿Por qué surge?</h6>
+              <p>
+                Año tras año el sector del software crece en tamaño y en demanda
+                de puestos de trabajo. Desde el Gobierno de la Ciudad creemos
+                que es una excelente oportunidad para incorporarse en el
+                ecosistema laboral del futuro, del cual podés ser protagonista.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <h6>3. ¿Cuál es el objetivo de Codo a Codo 4.0?</h6>
+              <p>
+                Queremos que los/as estudiantes incorporen habilidades
+                necesarias para mejorar sus posibilidades laborales, conseguir
+                empleo o comenzar su propio emprendimiento, en las empresas del
+                sector tecnológico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- F.A.Q Group 1 -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Preguntas frecuentes</h5>
+
+            <div class="accordion accordion-flush" id="faq-group-1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-target="#faqsOne-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                  >
+                    ¿Qué cursos de capacitación ofrece el programa?
+                  </button>
+                </h2>
+                <div
+                  id="faqsOne-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq-group-1"
+                >
+                  <div class="accordion-body">
+                    <ol>
+                      <li>
+                        Full Stack con Python: Este es un lenguaje de
+                        Programación multiparadigma, que se tipea dinámicamente
+                        y es de tendencia creciente en el mercado. Es un curso
+                        ideal para quienes ya poseen una base en algún lenguaje
+                        de Programación y quieran mejorar su perfil aprendiendo
+                        uno nuevo.
+                      </li>
+                      <li>
+                        Full Stack con Java: Ideal para quienes ya poseen una
+                        base en este lenguaje, uno de los más requeridos en el
+                        mercado laboral. Está orientado a objetos concurrentes y
+                        tipeados estático.
+                      </li>
+                      <li>
+                        Full Stack con PHP: Ideal para quienes ya poseen una
+                        base en programación y deseen profundizar en éste
+                        lenguaje, que se adapta especialmente al desarrollo web.
+                      </li>
+                      <li>
+                        Full Stack Desarrollo Web: Ideal para quienes ya tienen
+                        algún conocimiento o experiencia en desarrollo de sitios
+                        web y deseen complementarlo con el "detrás de escena" de
+                        un sitio. Sugerido para los/as egresados/as del Programa
+                        «Aprendé Programando».
+                      </li>
+                      <li>
+                        Ciencia de Datos: análisis de datos y Big data desde el
+                        punto de vista del desarrollo y procesamiento de
+                        información. Implementaciones avanzadas en Python y
+                        Google data studio, minería de datos en forma práctica y
+                        de aplicación laboral.
+                      </li>
+                      <li>
+                        Testing Automatizado y Q/A (control de calidad de
+                        Software): Ideal para quienes tienen manejo de
+                        tecnologías digitales y deseen desempeñarse en un rol de
+                        evaluador de proyectos informáticos.
+                      </li>
+                      <li>
+                        Diseño UX/UI: Ideal para cualquier persona que desee
+                        aprender los fundamentos básicos del diseño orientado a
+                        web, comprender el proceso y las distintas etapas del
+                        diseño digital para poder adentrarse en el mundo de la
+                        experiencia centrada en el usuario. No necesitás
+                        conocimientos previos específicos.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-target="#faqsOne-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                  >
+                    Modalidad de cursada
+                  </button>
+                </h2>
+                <div
+                  id="faqsOne-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq-group-1"
+                >
+                  <div class="accordion-body">
+                    Es 100% virtual. Se dan dos clases a la semana, con una
+                    duración de 1:30 h cada una, a través de una plataforma
+                    digital. Además, contarás con un aula virtual donde podrás
+                    complementar lo que aprendiste en clases con ejercitaciones
+                    y contenidos teóricos. Dentro de nuestros cursos contamos
+                    con un breve trayecto de habilidades blandas, el cual es
+                    auto asistido y debe realizarse antes de finalizar la
+                    cursada para poder egresar.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-target="#faqsOne-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                  >
+                    ¿Qué duración tiene la cursada?
+                  </button>
+                </h2>
+                <div
+                  id="faqsOne-3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq-group-1"
+                >
+                  <div class="accordion-body">Los cursos duran 4 meses.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-target="#faqsOne-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                  >
+                    ¿Recibo un título?
+                  </button>
+                </h2>
+                <div
+                  id="faqsOne-4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq-group-1"
+                >
+                  <div class="accordion-body">
+                    Se otorga una constancia de participación en el programa.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-target="#faqsOne-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                  >
+                    ¿Qué necesito para poder inscribirme?
+                  </button>
+                </h2>
+                <div
+                  id="faqsOne-5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq-group-1"
+                >
+                  <div class="accordion-body">
+                    Los requisitos de inscripción son: ser mayor de 18 años,
+                    contar con título secundario y conocimientos básicos de
+                    Programación e inglés.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End F.A.Q Group 1 -->
+      </div>
+    </div>
+  </section>
+</main>
+<!-- End #main -->
+
+{% endblock %}
